@@ -77,8 +77,33 @@ int main() {
 		cin >> minas;
 		int** matriz = new int*[tam];
 		for(int i = 0; i < tam; i++) {
-			matriz = new int[tam];
+			matriz[i] = new int[tam];
 		}
+		for(int i = 0; i < tam; i++) {
+                        for(int j = 0; j < tam; j++) {
+                                matriz[i][j] = 0;
+                        }
+                }
+		int temp1, temp2;
+	 	/*for(int k = 0; k < minas; j++) {
+			temp1 = rand() % tam;
+			temp2 = rand() % tam;
+			matriz[temp1][temp2] = 10;
+		}*/
+		/*for(int i = 0; i < tam; i++) {
+			for(int j = 0; j < tam; j++) {
+				if (matriz[i][j] == 10) {
+				} else if (matriz[i][j] == 0 && (i - 1) >= 0 && (i + 1) < tam && (j - 1) >= 0 && (j + 1) < tam {
+					if (matriz[i-1][j-1] == 10) {
+						matriz[i][j]++;
+					} else if(matriz[i-1][j] == 0) {
+						matriz[i][j]++;
+					} else if(matriz[i-1][j+1]) {
+						matriz[i][j]++;
+					}
+				}
+			}
+		}*/
         }
         return 0;
 }
